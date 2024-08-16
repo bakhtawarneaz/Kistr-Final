@@ -1,5 +1,4 @@
 import React from 'react'
-import './AuthLayout.css'
 import { useSelector } from 'react-redux';
 import { Navigate, Outlet } from 'react-router-dom';
 

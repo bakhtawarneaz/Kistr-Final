@@ -1,5 +1,4 @@
 import React from 'react'
-import './DashboardLayout.css'
 
 const DashboardLayout = () => {
   return (
