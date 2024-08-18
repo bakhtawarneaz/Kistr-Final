@@ -1,12 +1,13 @@
 /******** Dashboard Icons******/
-import DashboardIcon from '../icons/DashboardIcon';
-import InboxIcon from '../icons/InboxIcon';
-import EmployeeIcon from '../icons/EmployeeIcon';
-import CalenderIcon from '../icons/CalenderIcon';
-import ReportingIcon from '../icons/ReportingIcon';
-import AutomationIcon from '../icons/AutomationIcon';
-import ImportIcon from '../icons/ImportIcon';
-import MarketIcon from '../icons/MarketIcon'
+import DashboardIcon from '../MenuIcons/DashboardIcon';
+import InboxIcon from '../MenuIcons/InboxIcon';
+import EmployeeIcon from '../MenuIcons/EmployeeIcon';
+import CalenderIcon from '../MenuIcons/CalenderIcon';
+import ReportingIcon from '../MenuIcons/ReportingIcon';
+import AutomationIcon from '../MenuIcons/AutomationIcon';
+import ImportIcon from '../MenuIcons/ImportIcon';
+import MarketIcon from '../MenuIcons/MarketIcon'
+import RecruitingIcon from '../MenuIcons/RecruitingIcon';
 
 
 export function getItem(label, key, icon, children) {
@@ -26,7 +27,7 @@ export const items = [
     getItem('Performance', 'dashboard/performance'),
     getItem('Training', 'dashboard/training'),
   ]),
-  getItem('Recruiting', 'recruiting', <EmployeeIcon />),
+  getItem('Recruiting', 'dashboard/recruiting', <RecruitingIcon />),
   getItem('Calendar', 'dashboard/calendar', <CalenderIcon />),
   getItem('Reporting', 'dashboard/reporting', <ReportingIcon />),
   getItem('Automations', 'dashboard/automations', <AutomationIcon />),

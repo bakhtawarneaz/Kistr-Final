@@ -11,12 +11,18 @@ import './style/main.css'
 
 const queryClient = new QueryClient();
 
+const toastOptions = {
+  style: {
+      fontFamily: `"Inter", sans-serif`, 
+  }
+};
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <QueryClientProvider client={queryClient}>
     <React.StrictMode>
         <Provider store={store}>
           <PersistGate persistor={persistor}>
-              <Toaster position="top-center" />
+              <Toaster position="top-center" toastOptions={toastOptions} />
               <RouterProvider router={router} />
           </PersistGate>
       </Provider>
