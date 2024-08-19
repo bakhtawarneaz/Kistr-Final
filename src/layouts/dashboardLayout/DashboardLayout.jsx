@@ -6,6 +6,9 @@ import MainLogo from '../../icons/MainLogo';
 import sidebarCloseBtn from'../../assets/angle-double.png';
 import { useSelector } from 'react-redux';
 import MainLogoWithoutPath from '../../icons/MainLogoWithoutPath';
+import { CiSearch } from "react-icons/ci";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import Profile from'../../assets/profile.png';
 
 const { Sider } = Layout;
 
@@ -71,7 +74,61 @@ const DashboardLayout = () => {
       </Sider>
       <main className="site-main">
           <header className="main-header">
-              
+            <div className="search-widget">
+                <div className="input-wrap">
+                    <input type="search" name="" id="" placeholder="Search" />
+                    <button className="input-icon"> <CiSearch /></button>
+                </div>
+            </div>
+            <div className="header-right">
+                  {/* <div className='clockIn'>
+                      {!isClockedIn ? (
+                        <button onClick={handleClockIn}>
+                          <img src={ColckPic} alt='' />
+                          <span>Clock in</span>
+                        </button>
+                      ) : (
+                        <div className='play-pause'>
+                          <div onClick={handlePlayPause} className='btn-icon'>
+                            <img src={isWorking ? Play : Pause} />
+                          </div>
+                          <div className='work-break'>
+                            <span className={isWorking ? 'play' : 'pause'}>Work: {formatTime(workTime)}</span>
+                            <span className={isWorking ? 'pause' : 'play'}>Break: {formatTime(breakTime)}</span>
+                          </div>
+                          <div className='expand' onClick={handleClockInListing}>
+                            <img src={Expand} alt='' />
+                          </div>
+                          {clockInCollapsed && (
+                              <div className='clockIn-listing'>
+                                <div className='col'>
+                                  <span className='hed'>Clock In:</span>
+                                  <span className='val'>{formatClockInTime(firstClockIn)}</span>
+                                </div>
+                                <div className='col'>
+                                  <span className='hed'>Worked:</span>
+                                  <span className='val'>{formatTime(workTime)}</span>
+                                </div>
+                                <div className='col'>
+                                  <span className='hed'>Breaks:</span>
+                                  <span className='val'>{formatTime(breakTime)}</span>
+                                </div>
+                                <hr />
+                                <button className='save-clockin' onClick={handleClockOut}>Clock Out</button>
+                              </div>
+                            )}  
+                        </div>
+                      )}
+                  </div> */}
+                  <div className='profile-cover'>
+                    <div className="icon">
+                        <button><IoMdNotificationsOutline /></button>
+                    </div>
+                    <div className="icon img-icon">
+                        <img src={Profile} alt="" />
+                    </div>
+                  </div>
+              </div>
           </header>
           <div className='main-body'>
               <Outlet />
