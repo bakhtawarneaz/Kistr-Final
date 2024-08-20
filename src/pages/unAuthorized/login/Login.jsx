@@ -8,6 +8,7 @@ import { login } from '../../../api/authApi'
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 import { LuLoader } from 'react-icons/lu'
+import '@styles/_login.css';
 
 
 const Login = () => {

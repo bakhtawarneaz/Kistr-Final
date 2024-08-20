@@ -19,11 +19,15 @@ import Automations from '../pages/authorized/automations/Automations';
 import Imports from '../pages/authorized/imports/Imports';
 import Marketplace from '../pages/authorized/marketplace/Marketplace';
 
-import Employee from '../pages/authorized/employees/overview/Employee';
-import AddEmployee from '../pages/authorized/employees/overview/AddEmployee';
-import EmployeeDetail from '../pages/authorized/employees/overview/EmployeeDetail';
+import Overview from '../pages/authorized/employees/overview/Overview';
 import Performance from '../pages/authorized/employees/performance/Performance';
 import Training from '../pages/authorized/employees/training/Training';
+
+import Employee from '../pages/authorized/employees/overview/employee/Employee';
+import AddEmployee from '../pages/authorized/employees/overview/employee/AddEmployee';
+import EmployeeDetail from '../pages/authorized/employees/overview/employee/EmployeeDetail';
+
+
 
 const router = createBrowserRouter([
     {
@@ -42,13 +46,14 @@ const router = createBrowserRouter([
             { path: 'automations', element: <Automations /> },
             { path: 'imports', element: <Imports /> },
             { path: 'marketplace', element: <Marketplace /> },
-            
+
+            { path: 'overview', element: <Overview /> },
+            { path: 'performance', element: <Performance /> },
+            { path: 'training', element: <Training /> },
+
             { path: 'employee', element: <Employee /> },
             { path: 'employee-add', element: <AddEmployee /> },
             { path: 'employee-detail/:id', element: <EmployeeDetail /> },
-
-            { path: 'performance', element: <Performance /> },
-            { path: 'training', element: <Training /> },
         
         ],
     },

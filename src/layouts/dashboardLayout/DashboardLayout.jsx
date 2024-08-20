@@ -9,6 +9,7 @@ import MainLogoWithoutPath from '../../icons/MainLogoWithoutPath';
 import { CiSearch } from "react-icons/ci";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import Profile from'../../assets/profile.png';
+import '@styles/_dashboard.css';
 
 const { Sider } = Layout;
 

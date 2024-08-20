@@ -1,0 +1,35 @@
+.breadcrumb-wrap ul {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-wrap ul li {
+    list-style: none;
+}
+
+.breadcrumb-wrap ul .prev {
+    font-family: var(--family);
+    font-size: var(--size14);
+    font-weight: var(--weight-medium);
+    line-height: 20px;
+    color: #DEE5EF;
+}
+
+.breadcrumb-wrap ul .next {
+    font-family: var(--family);
+    font-size: var(--size14);
+    font-weight: var(--weight-medium);
+    line-height: 20px;
+    color: #5451F2;
+}
+
+.breadcrumb-wrap ul .icon {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb-wrap ul .icon svg {
+    color: #DEE5EF;
+}

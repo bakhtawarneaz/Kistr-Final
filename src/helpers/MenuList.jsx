@@ -23,7 +23,7 @@ export const items = [
   getItem('Dashboard', 'dashboard/home', <DashboardIcon />),
   getItem('Inbox', 'dashboard/inbox', <InboxIcon />),
   getItem('Employees', 'employees', <EmployeeIcon />, [
-    getItem('Overview', 'dashboard/employee'),
+    getItem('Overview', 'dashboard/overview'),
     getItem('Performance', 'dashboard/performance'),
     getItem('Training', 'dashboard/training'),
   ]),
